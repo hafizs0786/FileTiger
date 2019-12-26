@@ -1,0 +1,34 @@
+
+<app-main-header></app-main-header>
+<app-nav-bar></app-nav-bar>
+
+<div class="container-fluid inner">
+  <div class="row box" style="height: 100%;">
+    <div class="col-md-12" style="padding: 0;">
+      <mat-toolbar style="height: 50px; box-shadow: inset 0px -10px 25px -5px #bbb;">
+        
+        <mat-checkbox [(ngModel)]="view_type" class="mr-3">List</mat-checkbox>
+        <mat-icon class="example-icon mr-3">create_new_folder</mat-icon>
+        <mat-icon class="example-icon mr-3">search</mat-icon>
+        <mat-icon class="example-icon mr-3">close</mat-icon>
+        <span class="spacer" ></span>
+        <form>
+          <div class="searchBox position-relative">
+              <i class="fa fa-search position-absolute text-secondary mt-2 ml-2"></i>
+              <input type="search" placeholder="Search...">
+          </div>
+        </form>
+      </mat-toolbar>
+    </div>
+    <div class="col-md-3">
+      <app-side-menu></app-side-menu>
+    </div>
+    <div class="col-md-9" style="height: 90%; border-left: 1px solid #bbb; padding: 0;">      
+      <app-list-doc *ngIf="!view_type"></app-list-doc>
+      <app-grid-doc *ngIf="view_type"></app-grid-doc>
+      <div class="col-12" style="position: absolute; bottom: 0; padding: 0; border-top: 1px solid #bbb;">
+        <app-main-footer></app-main-footer>
+      </div>
+    </div>
+  </div>
+</div>
