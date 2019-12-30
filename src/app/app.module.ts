@@ -23,6 +23,7 @@ import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormsModule } from '@angular/forms';
+import { SignupComponent } from './pages/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FormsModule } from '@angular/forms';
     MainFooterComponent,
     MainHeaderComponent,
     NavBarComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    SignupComponent
   ],
   imports: [
     FormsModule,

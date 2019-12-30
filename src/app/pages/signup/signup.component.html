@@ -10,21 +10,27 @@
         </div>
         <div class="col-sm-12 col-md-6 bg-white p-3 p-md-4">
             <div class="login py-3 px-md-2 px-4">
-                <a [routerLink]="['/signup']">Create a new account</a>
-                <h3 class="text-center pt-4 pb-2">Log In</h3>
+                <h4 class="text-center pt-4 pb-2">Create New Account</h4>
                 <form action="" method="post">
                     <div class="inputBox position-relative">
-                        <i class="fa fa-user position-absolute mt-3 ml-2 text-secondary"></i>
-                        <input type="text" name="username" placeholder="Username" class="py-1 mt-2 w-100">
+                        <i class="fa fa-envelope position-absolute mt-3 ml-2 text-secondary"></i>
+                        <input type="email" name="email" placeholder="Enter Your Email" class="py-1 mt-2 w-100">
                     </div>
-                    <div class="inputBox position-relative pb-2">
+                    <div class="inputBox position-relative">
                         <i class="fa fa-key position-absolute mt-3 ml-2 text-secondary"></i>
-                        <input type="password" name="password" placeholder="Password" class="py-1 mt-2 w-100"> 
+                        <input type="text" name="mobile" placeholder="Enter Mobile Number" class="py-1 mt-2 w-100"> 
                     </div>
-                    <a [routerLink]="['/forgot-password']">Forgot Password</a>
+                    <div class="inputBox position-relative">
+                        <i class="fa fa-key position-absolute mt-3 ml-2 text-secondary"></i>
+                        <input type="password" name="password" placeholder="Enter Password" class="py-1 mt-2 w-100"> 
+                    </div>
+                    <div class="inputBox position-relative">
+                        <i class="fa fa-key position-absolute mt-3 ml-2 text-secondary"></i>
+                        <input type="password" name="password" placeholder="Re-Enter Password" class="py-1 mt-2 w-100"> 
+                    </div>
                     <div class="sign text-center pt-4 pb-3">
-                        <a [routerLink]="['/dashboard']"  class="btn btn-success" type="button">Sign In</a>
-                    </div>
+                        <a [routerLink]="['/dashboard']"  class="btn btn-success" type="button">Sign Up</a>
+                    </div>                    
                     <p class="text-center">or with</p>
                     <div class="social">                        
                         <div class="icon text-center bg-white">
