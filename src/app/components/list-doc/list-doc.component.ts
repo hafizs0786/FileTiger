@@ -22,10 +22,10 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {name: 'Hydrogen', date: 28.522, size: 'H'},
-  {name: 'Helium', date: 4.0026, size: 'He'},
-  {name: 'Lithium', date: 6.941, size: 'Li'},
-  {name: 'Beryllium', date: 9.0122, size: 'Be'},
-  {name: 'Boron', date: 10.811, size: 'B'},
-  {name: 'Carbon', date: 12.0107, size: 'C'},
+  {name: 'New Folder 1', date: 22-12-2018, size: '20,140 KB'},
+  {name: 'New Folder 2', date: 20-1-2019, size: '47,080 KB'},
+  {name: 'New Folder 3', date: 30-3-2019, size: '2,132 KB'},
+  {name: 'New Folder 4', date: 22-4-2019, size: '24,070 KB'},
+  {name: 'New Folder 5', date: 24-4-2019, size: '1,247 KB'},
+  {name: 'New Folder 6', date: 15-5-2019, size: '6,789 KB'},
 ];
